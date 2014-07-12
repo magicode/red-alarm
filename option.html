@@ -1,31 +1,40 @@
 ﻿
 <html>
 <head>
-    <title></title>
-    <script type="text/javascript" src="option.js" ></script>
+    <title> הגדרות </title>
+    <script type="text/javascript" src="jquery-2.0.2.js"></script>
     <link href="option.css" rel="stylesheet" />
-
-    
 </head>
-<body  dir="rtl" ><form id="options" style="   font-family:Arial ">
-                      <h1>התראות פיקוד העורף</h1>
-                      <!--<p>
-                          <label >  (מושבת) בחר ישוב: </label>
-                          <input type="text" id="ajax" name="frequency" list="json-datalist" placeholder="e.g. datalist">
-                          <datalist id="json-datalist"></datalist>
-                      </p>--><p>
-    <input type="checkbox" name="SoundActivated">
-    <label >השמעת צליל התראה</label>
-
-</p><p>
-    <input type="checkbox" name="isActivated">
-    <label >הצגת התראות</label>
-</p><p>
-
-    <input type="button" name="but"  value="אישור" />
-</p>
-                      <div id="about"></div>
-</form>
-   
+<body  dir="rtl" >
+  <p>
+    <button data-tab='#setting'> הגדרות </button>
+    <button data-tab='#log'> הסטוריה </button>
+  </p>
+  <div id="setting" class='tab'>
+      <h1> הגדרות </h1>
+      <p>
+          <label> בחר מיקום התראה חזקה </label>
+	  <select id="selectLocation" > </select>
+	</p>
+	
+	<p><button id="play-alarm"> שמע התראה חזקה </button></p>
+       <p>
+	  <input type="checkbox" name="soundActivated" class="setting-checkbox">
+	  <label >השמעת צליל התראה</label>
+      </p>
+      <p>
+	  <input type="checkbox" name="isActivated" class="setting-checkbox">
+	  <label >הצגת התראות</label>
+      </p>
+   </div> 
+  <div id="log" class='tab' hidde=hidde>
+      <h1> היסטוריה </h1>
+      
+      <div id="allLog">
+      
+      </div>
+  </div> 
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="option.js"></script>
 </body>
-        </html>
+</html>
