@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="popup.js"></script>
+    <style type="text/css">
+        #footer {
+            border-top: 1px solid #ccc;
+            margin-top: 17px;
+            overflow: hidden;
+            padding-top: 11px;
+        }
+        p {
+            line-height: 1.8em;
+            font-size: 12px;
+        }
+
+        
+
+    </style>
+</head>
+<!--<body>
+    היישוב שלך:
+
+    התראות:
+
+    התראות קוליות:
+</body>-->
+<body dir="rtl">
+    <form id="popup" style="   font-family:Arial ">
+        <p style="display:none">
+            <!--<label style="width: 100px; display: inline-block;">     היישוב שלך: </label>-->
+            <span id="frequency"></span>
+        </p><p>
+            <!--<label style="width: 100px; display: inline-block;">   השמעת צליל: </label>-->
+            <!--<input type="checkbox" name="SoundActivated" disabled="disabled">-->
+            <span id="SoundActivated"></span>
+        </p><p>
+    <!--<label style="width: 100px; display: inline-block;">  הצגת התראות </label>-->
+    <!--<input type="checkbox" name="isActivated" disabled="disabled">-->
+        <span id="isActivated"></span>
+    
+</p>
+        <div id="footer">
+            <input type="button" name="but" id="op" style=" width: 224px;" value="ערוך" />
+        </div>
+    </form>
+
+</body>
+</html>
