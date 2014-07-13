@@ -5,7 +5,7 @@ var locationData  = window._locationData;
 
 function checkWarning() {
     var req = new XMLHttpRequest();
-    req.open("GET", "http://www.oref.org.il/WarningMessages/alerts.json?id=" + Math.random(), true);
+    req.open("GET", "http://www.oref.org.il/WarningMessages/alerts.json", true);
     req.onload = getJson;
     req.send(null);
 }
@@ -57,7 +57,7 @@ function getJson(e){
 function test(){
    lastWarningId = 0;
     getJson( { target : {responseText: 
-   '{ "id" : "1405053379253","title" : "פיקוד העורף התרעה במרחב ","data" : ["test" , "נגב 299" , "נגב 299" , "נגב 299" ,"נגב 299"]}' } });
+   '{ "id" : "1405053379253","title" : "פיקוד העורף התרעה במרחב ","data" : ["test" , "נגב 299"]}' } });
 }
 
 setInterval(checkWarning, 2000);
