@@ -5,7 +5,7 @@ var locationData  = window._locationData;
 
 function checkWarning() {
     var req = new XMLHttpRequest();
-    req.open("GET", "http://www.oref.org.il/WarningMessages/alerts.json?v=1", true);
+    req.open("GET", "http://www.oref.org.il/WarningMessages/Alert/alerts.json?v=1", true);
     req.onload = getJson;
     req.send(null);
 }
