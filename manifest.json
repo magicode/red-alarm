@@ -7,7 +7,7 @@
      "default_icon": "icon.png",
      "default_popup": "option.html"
   },
-  "version": "2.14",
+  "version": "2.15",
   "icons": { "16": "16.png", "48": "48.png", "128": "128.png" },
   "permissions": [
     "http://www.oref.org.il/",
